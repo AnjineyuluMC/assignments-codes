@@ -1,1 +1,63 @@
+Triangle Pattern:
+import java.util.*;  
+class pattern { 
+	public static void main(String[] args) 
+	{ 
+		Scanner sc = new Scanner(System.in); 
+		System.out.println("Enter the number of rows"); 
+		int rows = sc.nextInt(); 
+		for (int i = 1; i <= rows; i++) { 
+ 			for (int j = rows; j >= i; j--) { 
+				System.out.print(" "); 
+			}
+ 			for (int j = 1; j <= i; j++) { 
+				System.out.print("* "); 
+			} 
+ 			System.out.println(); 
+		} 
+	} 
+}
+2.PrimeNumbers
+package assignment_problem;
+public class PrimeNumbers {
+	  public static void main(String[] args) {
+	    int num = 20;  
+	    int count;
+ 	    for (int i = 1; i <= num; i++) {
+	      count = 0;   
+ 	      for (int j = 2; j <= i / 2; j++) {
+	        if (i % j == 0) {
+	          count++;  
+	          break; 
+	        }
+	      }
+	      if (count == 0) {
+	        System.out.println(i);  
+	      }
+	    }
+	  }
+	}
+3.Armstrong Number
+package assignment_problem;
+import java.util.Scanner;
+class Armstrong
+{
+	public static void main(String[] arg){
+	int a,arm=0,n,temp;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter a number");
+	n=sc.nextInt();
+	temp=n;
+	for( ;n!=0;n/=10 )
+	{
+		a=n%10;
+		arm=arm+(a*a*a);
+	}
+	if(arm==temp)
+	System.out.println(temp+" is a armstrong number ");
+	else
+	System.out.println(temp+" is not a armstrong number ");
+        }
+}
+
 
